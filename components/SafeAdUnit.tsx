@@ -11,7 +11,13 @@ declare global {
 export default function SafeAdUnit() {
     useEffect(() => {
         try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            // Check if ad is already loaded in this slot to prevent heavy resource usage
+            const ads = document.getElementsByClassName("adsbygoogle");
+            const currentAd = ads[ads.length - 1];
+
+            if (currentAd && !currentAd.getAttribute("data-adsbygoogle-status")) {
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+            }
         } catch (err) {
             console.error("AdSense error:", err);
         }
