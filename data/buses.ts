@@ -21,7 +21,14 @@ export const buses: Bus[] = [
             "Novotel Ambassador Dongdaemun",
             "Nine Tree by Parnas Seoul Dongdaemun",
             "Travelodge Dongdaemun Hotel",
-            "U5 Hotel"
+            "U5 Hotel",
+            "Morning Sky Hotel",
+            "Hotel the Designers DDP",
+            "Hotel the Designers Dongdaemun",
+            "Toyoko Inn Seoul Dongdaemun",
+            "The Splaisir Seoul Dongdaemun",
+            "Mangrove Dongdaemun Hotel",
+            "K Guest House Dongdaemun Premium"
         ],
         description: "Direct limousine bus connecting Incheon Airport to major hotels in Dongdaemun. Comfortable seats and ample luggage space.",
         captainTip: "This bus is very popular during weekends. If you are departing from Terminal 2, you have a better chance of getting a good seat."
